@@ -1,0 +1,22 @@
+# Yaml file with configutration of sensored setup
+#
+# markerFixList: contains the list of the arucos.
+#                if it is empty (with a zero when using ROS2), publish all.
+# camera_frame: contains the string that define
+#               the camera frame wrt the markers are referred.
+# aruco_frame: name of the prefix _##
+#              where the new tf will be use.
+
+
+aruco_broadcaster_node:
+  ros__parameters:
+    # publish all the markers found
+    # the first value must be a 0 if you are using the ROS2 branch!
+    # ex. of a list: markerList: [0, 100, 101, 106]
+    markerList: [0]
+
+    # the frame w.r.t. the arucos are referred
+    camera_frame: camera_link
+
+    # the prefix of the tf that will be used
+    aruco_frame: aruco
