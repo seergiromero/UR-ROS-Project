@@ -1,0 +1,32 @@
+# Yaml file with configutration of sensored setup
+#
+# markerFixList: cointains the label of the
+# markers that are fixed on the setup
+# markerFixPos_##: contains values that are
+# a geometry_msgs::Pose: - x, y, z, qx, qy, qz, qw
+
+# for example:
+# markerFixPos_23: [0.1, 0.1, 0.0, 0.0, 0.0, 0.0, 1.0]
+# where the fix marker 23 is located at position
+# x, y, z =>  0.1, 0.1 , 0.0 in meters
+# with the rotation
+# x, y, z, q => 0.0, 0.0, 0.0, 1.0
+
+# camera_frame: contains the string that define
+# the camera frame wrt the markers are referred
+
+tablecalibrator:
+  ros__parameters:
+    markerFixList: [100,101,102,103,104,105,106,107]
+    markerFixPos_100: [ 0.217, -0.187, 0.0, 0.0, 0.0, 1.0, 0.0]
+    markerFixPos_101: [ -0.217, -0.187, 0.0, 0.0, 0.0, 1.0, 0.0]
+    markerFixPos_102: [ 0.217,  0.187, 0.0, 0.0, 0.0, 1.0, 0.0]
+    markerFixPos_103: [ -0.217,  0.187, 0.0, 0.0, 0.0, 1.0, 0.0]
+    markerFixPos_104: [ -0.220, -0.043, 0.0, 0.0, 0.0, -0.9659, 0.2588]
+    markerFixPos_105: [ -0.221,  0.050, 0.0, 0.0, 0.0, -0.9239, 0.3827 ]
+    markerFixPos_106: [ 0.221, -0.050, 0.0, 0.0, 0.0, -0.9239 , 0.3827 ]
+    markerFixPos_107: [ 0.218,  0.039, 0.0, 0.0, 0.0, -0.9914 , 0.1305 ]
+    
+    camera_frame: rs_camera_link   # camera frame wrt the markers are referred
+
+    

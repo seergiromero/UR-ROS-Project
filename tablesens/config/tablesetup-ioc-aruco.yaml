@@ -1,0 +1,39 @@
+# Yaml file with configutration of sensored setup
+#
+# markerFixList: cointains the label of the
+# markers that are fixed on the setup
+# markerFixPos_##: contains values that are
+# a geometry_msgs::Pose: - x, y, z, qx, qy, qz, qw
+
+# for example:
+# markerFixPos_23: [0.1, 0.1, 0.0, 0.0, 0.0, 0.0, 1.0]
+# where the fix marker 23 is located at position
+# x, y, z =>  0.1, 0.1 , 0.0 in meters
+# with the rotation
+# x, y, z, q => 0.0, 0.0, 0.0, 1.0
+
+# camera_frame: contains the string that define
+# the camera frame wrt the markers are referred
+
+tablecalibrator:
+  ros__parameters:
+    markerFixList: [100,101,102,103,104,105,106,107,202,203,209,307,308,312,315]
+    markerFixPos_100: [-0.430,  0.380, 0.0, 0.0, 0.0, 0.0, 1.0]
+    markerFixPos_101: [ 0.430,  0.380, 0.0, 0.0, 0.0, 0.0, 1.0]
+    markerFixPos_102: [-0.430, -0.380, 0.0, 0.0, 0.0, 0.0, 1.0]
+    markerFixPos_103: [ 0.430, -0.380, 0.0, 0.0, 0.0, 0.0, 1.0]
+    markerFixPos_104: [ 0.434,  0.091, 0.0, 0.0, 0.0, 0.258819, 0.9659258]
+    markerFixPos_105: [ 0.435, -0.100, 0.0, 0.0, 0.0, 0.3826834, 0.9238795 ]
+    markerFixPos_106: [-0.435,  0.100, 0.0, 0.0, 0.0, 0.3826834, 0.9238795  ]
+    markerFixPos_107: [-0.430, -0.082, 0.0, 0.0, 0.0, 0.1305262, 0.9914449  ]
+    markerFixPos_202: [ 0.075, -0.225, 0.070, 0.0, 0.0, 0.0, 1.0 ]
+    markerFixPos_203: [ 0.325,  0.225, 0.070, 0.0, 0.0, 0.0, 1.0 ]
+    markerFixPos_209: [-0.175, -0.125, 0.100, 0.0, 0.0, 0.0, 1.0 ]
+    markerFixPos_307: [-0.025,  0.075, 0.070, 0.0, 0.0, 0.0, 1.0 ]
+    markerFixPos_308: [-0.225,  0.075, 0.070, 0.0, 0.0, 0.0, 1.0 ]
+    markerFixPos_312: [ 0.075,  0.275, 0.100, 0.0, 0.0, 0.0, 1.0 ]
+    markerFixPos_315: [ 0.175, -0.075, 0.140, 0.0, 0.0, 0.0, 1.0 ]
+    
+    
+    camera_frame: kinect2_rgb_optical_frame   # camera frame wrt the markers are referred
+  
