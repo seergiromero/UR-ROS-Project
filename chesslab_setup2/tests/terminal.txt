@@ -1,0 +1,11 @@
+ros2 service call /chesslab_setup2_demo/set_object_pose chesslab_setup2_interfaces/srv/SetObjPose "{objid: 316, p: {position: {x: 0.075, y: 0.025, z: 0.04}, orientation: {x: 0.0, y: 0.0, z: 0.0}}}"
+
+ ros2 service call /chesslab_setup2_demo/reset_scene std_srvs/srv/Empty 
+
+ros2 service call /chesslab_setup2_demo/set_robot_config chesslab_setup2_interfaces/srv/SetRobConf "{conf: [0.0, 0.0, -1.0, 0.0, 0.0, 0.0]}"
+
+ros2 service call /inverse_kinematics kinenikros2/srv/InverseKinematics "{pose: {position: {x: 0.37, y: 0.0, z: 0.15}, orientation: {x: 1.0, y: 0, z: 0, w: 0.0}}}"
+
+ros2 service call /chesslab_setup2_demo/set_robot_config chesslab_setup2_interfaces/srv/SetRobConf "{conf:[2.8330728640527525, -1.1213866134350874, 1.8341905333160966, -2.2836002466759058, -1.5707963267948921, -1.8793161163319372] }"
+
+

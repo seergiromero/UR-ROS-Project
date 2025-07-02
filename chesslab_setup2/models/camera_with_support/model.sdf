@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<sdf version="1.10">
+  <model name="camera_with_support">
+    <!-- Include the support model -->
+    <include>
+      <uri>model://camera_support</uri>
+      <name>support</name>
+      <pose>0 0 0 0 0 0</pose>
+    </include>
+
+    <!-- Include the camera model -->
+    <include>
+      <uri>model://realsense_camera</uri>
+      <name>camera</name>
+      <pose>0 -0.015 0.525 0 1.085 -1.5707</pose> <!-- Adjust the pose as needed -->
+      <!--<pose>0 0 0.5 1.5744972 -1.0763238 -0.0037689 </pose> -->
+    </include>
+
+    <!-- Define a fixed joint connecting the support and camera -->
+    <joint name="support_camera_joint" type="fixed">
+      <parent>support::link</parent>
+      <child>camera::realsense_link</child>
+    </joint>
+  </model>
+</sdf>
