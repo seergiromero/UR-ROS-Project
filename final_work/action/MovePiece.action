@@ -1,0 +1,10 @@
+# Goal
+string piece_name    # e.g. "pawnB1"
+string square        # e.g. "E4"
+---
+# Result
+bool   success
+string message      # "done" or tect error
+---
+# Feedback
+string stage        # "approaching" | "gripping" | "placing"

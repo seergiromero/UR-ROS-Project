@@ -1,0 +1,10 @@
+# Goal: specify the type of castling
+string castling_type  # "kingside"/"short" or "queenside"/"long"
+---
+# Result: success status and message
+bool success
+string message
+---
+# Feedback: current stage of the castling operation
+string stage          # "moving_king", "moving_rook", etc.
+string current_piece  # name of piece currently being moved

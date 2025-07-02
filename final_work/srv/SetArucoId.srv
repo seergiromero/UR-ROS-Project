@@ -1,0 +1,4 @@
+int32 aruco_id
+---
+bool success
+string message

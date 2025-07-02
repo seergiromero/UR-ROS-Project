@@ -1,0 +1,12 @@
+# Goal - what piece kills what piece and where
+string killer_piece     # The piece that will make the kill (e.g., "queenW")
+string killed_piece     # The piece to be killed/removed (e.g., "pawnB3")
+string target_square    # The square where the killer piece will end up (e.g., "e4")
+---
+# Result - whether the kill was successful
+bool success
+string message
+---
+# Feedback - current stage of the kill operation
+string stage      # Current stage: "removing_killed_piece", "moving_killer_piece", "completed"
+int32 progress    # Progress percentage (0-100)
