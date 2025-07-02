@@ -1,0 +1,3 @@
+#chesslab_setup2_interfaces_interfaces package
+
+Package with the interfaces of chesslab_setup2
