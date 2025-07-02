@@ -1,0 +1,15 @@
+# Used by ros2_control
+controller_manager:
+  ros__parameters:
+    update_rate: 500 # Hz
+
+    joint_state_broadcaster:
+      type: joint_state_broadcaster/JointStateBroadcaster
+
+    robotiq_85_gripper_controller:
+      type: position_controllers/GripperActionController
+
+robotiq_85_gripper_controller:
+  ros__parameters:
+    joint: robotiq_85_left_knuckle_joint
+    goal_tolerance: 1.0e-3
