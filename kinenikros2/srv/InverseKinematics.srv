@@ -1,0 +1,5 @@
+string    type
+geometry_msgs/Pose pose
+---
+InverseKinematics[] ik_solution
+bool status
